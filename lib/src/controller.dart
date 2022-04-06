@@ -33,7 +33,7 @@ class CropController {
   set area(Rect value) => _delegate.onChangeArea(value);
 
   /// change [double] of cropping scale based on [double] given value.
-  set scale(double value) => _delegate.onScaleChanged(value);
+  void updateScale(double value) => _delegate.onScaleChanged(value);
 }
 
 /// Delegate of actions from [CropController]
