@@ -315,6 +315,9 @@ class _CropEditorState extends State<_CropEditor> {
       }
       ..onChangeArea = (newArea) {
         _resizeWith(_aspectRatio, newArea);
+      }
+      ..onScaleChanged = (newScale) {
+        _applyScale(newScale);
       };
 
     super.initState();

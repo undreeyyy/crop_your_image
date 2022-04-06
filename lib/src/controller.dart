@@ -31,6 +31,9 @@ class CropController {
 
   /// change [Rect] of cropping area based on [Rect] of original imgage.
   set area(Rect value) => _delegate.onChangeArea(value);
+
+  /// change [double] of cropping scale based on [double] given value.
+  set scale(double value) => _delegate.onScaleChanged(value);
 }
 
 /// Delegate of actions from [CropController]
@@ -53,4 +56,7 @@ class CropControllerDelegate {
 
   /// callback that [CropController.area] is changed.
   late ValueChanged<Rect> onChangeArea;
+
+  /// callback that [CropController.scale] is changed.
+  late ValueChanged<double> onScaleChanged;
 }
