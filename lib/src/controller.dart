@@ -57,6 +57,6 @@ class CropControllerDelegate {
   /// callback that [CropController.area] is changed.
   late ValueChanged<Rect> onChangeArea;
 
-  /// callback that [CropController.scale] is changed.
+  /// callback that [CropController.updateScale] is changed.
   late ValueChanged<double> onScaleChanged;
 }
